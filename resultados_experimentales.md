@@ -49,13 +49,6 @@ Los principales patrones de conflicto observados fueron:
 - **Deadlocks**: Ocurrieron ocasionalmente cuando múltiples transacciones intentaban bloquear los mismos recursos en orden diferente.
 - **Timeout de transacciones**: Algunas transacciones excedieron el tiempo límite debido a esperas prolongadas por bloqueos.
 
-## Gráficos de Rendimiento
-
-![Tasa de Éxito vs Nivel de Aislamiento](https://ejemplo.com/tasa_exito.png)
-![Tiempo Promedio vs Usuarios Concurrentes](https://ejemplo.com/tiempo_promedio.png)
-
-_Nota: Los gráficos son representaciones conceptuales. En la implementación real, estos se generarían a partir de los datos recopilados._
-
 ## Conclusiones Preliminares
 
 1. **Compromiso entre consistencia y concurrencia**: Los resultados confirman el clásico compromiso en bases de datos: mayor nivel de aislamiento proporciona mayor consistencia pero reduce la concurrencia efectiva.

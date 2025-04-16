@@ -111,17 +111,8 @@ Durante la ejecución, el programa registra:
 
 Estos datos permiten comparar cómo los diferentes niveles de aislamiento afectan el rendimiento y la consistencia del sistema.
 
-## Notas para el Análisis
-
-Al evaluar los resultados, considere:
-
-1. **Compromiso entre consistencia y concurrencia**: Los niveles más altos de aislamiento (como SERIALIZABLE) ofrecen mayor consistencia pero pueden reducir la concurrencia.
-2. **Tiempos de ejecución**: Compare los tiempos promedios para cada nivel de aislamiento.
-3. **Tasas de éxito/fallo**: Observe cómo varía la relación entre reservas exitosas y fallidas.
-4. **Escalabilidad**: Analice cómo se comporta el sistema a medida que aumenta el número de usuarios concurrentes.
-
 ## Solución de Problemas
 
-- **Error de conexión**: Verifique que PostgreSQL esté en ejecución y los parámetros de conexión sean correctos.
+- **Error de conexión**: Verificar que PostgreSQL esté en ejecución y los parámetros de conexión sean correctos.
 - **Errores de simulación**: Use la opción `--reset` para restaurar los datos a un estado consistente.
-- **Timeout en transacciones**: Puede indicar bloqueos excesivos. Considere modificar los parámetros de timeout de PostgreSQL.
+- **Timeout en transacciones**: Pueden suceder bloqueos excesivos. Modificar los parámetros de timeout de PostgreSQL.
